@@ -1,0 +1,102 @@
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background: rgb(255, 205, 147);
+}
+.loader-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    animation: hideloader 0.5s ease 2s forwards;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgb(235, 102, 62);
+    border-top: 8px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes hideloader{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    99%{
+        opacity: 0;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.content{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: showtime 0.5s ease 2s forwards;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+}
+h1{
+    color: rgb(255, 135, 98);
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 36px;
+}
+h2{
+    margin: 0;
+    color: rgb(235, 102, 62); 
+}
+button{
+    height: 25%;
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(228, 116, 72);
+    background-color: rgb(248, 239, 236);
+    text-shadow: 0 0 5px rgba(255, 164, 128, 0.637);
+}
+button:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 132, 89);
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    z-index: 50;
+    opacity: 0;
+    animation: showtime 0.5s ease 2s forwards;
+}
+@keyframes showtime{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

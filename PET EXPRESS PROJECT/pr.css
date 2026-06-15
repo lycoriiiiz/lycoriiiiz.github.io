@@ -1,0 +1,55 @@
+body{
+    background: rgb(255, 205, 147);
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(245, 121, 72);
+    font-weight: bold;
+    font-size: 102px;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(196, 80, 35);
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: -80px;
+
+}
+.koshka{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(196, 80, 35);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 220px;
+    margin-top: 300px;
+}
+.sobaka{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(196, 80, 35);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 650px;
+    margin-top: -55px;
+}
+.gryz{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(196, 80, 35);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 1050px;
+    margin-top: -55px;
+}
+.popug{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(196, 80, 35);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 1465px;
+    margin-top: -55px;
+}
+img{
+    border: 25px solid rgb(253, 158, 95);
+    border-radius: 15px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
